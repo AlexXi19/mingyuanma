@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://alexxi19.github.io/sitemap.xml
+Sitemap: https://mingyuanma.github.io/sitemap.xml
