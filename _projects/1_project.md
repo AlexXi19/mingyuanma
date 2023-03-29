@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Pac-Man
-description: A semester-long course project in intro to Artificial Intelligence @ UC Berkeley (COMPSCI 188)
+description: A semester-long course project for the class Artificial Intelligence @ UC Berkeley (COMPSCI 188)
 img: assets/img/pacman/pacman_game.gif
-importance: 1
+importance: 2
 category: work
 ---
 
