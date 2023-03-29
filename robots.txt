@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mamingyuan.com/sitemap.xml
+Sitemap: https://mamingyuan.github.io/sitemap.xml
