@@ -1,8 +1,8 @@
 ---
 layout: page
 title: image-image translation
-description: Unpaired Image-to-Image Translation using Cycle-GAN with JAX framework.<br> 
-img: assets/img/cyclegan/horse2zebra.gif
+description: Unpaired Image-to-Image Translation using Cycle-GAN with JAX framework.<br> <br> 
+img: assets/img/cyclegan/cyclegan.gif
 importance: 1
 category: work
 ---
