@@ -7,7 +7,7 @@ importance: 2
 category: work
 ---
 
-**Introduction**
+### **Introduction**
 
 The most exciting applications of NLP haven't been invented yet. While much of this course will give you exposure to the common methods in NLP, you will also carry out an annotation project where you will get exposure to the entire NLP design process for building a classifer for a brand new task. You will decide on a new NLP task — either document classification (one label per document) or sequence labeling (one label per contiguous span) — annotate data to support it (including creating annotation guidelines), measure your inter-annotator agreement rate, and build a classifier to predict those labels using the methods we discuss in class ([INFO 159, spring 2022](https://people.ischool.berkeley.edu/~dbamman/nlp22.html)). This is a group project, where I worked with my teammates, Yuanrui Zhu and Shuyao Zhou
 
@@ -15,21 +15,21 @@ In our AP project, the category we are annotating is a Reddit comment “casual�
 
 The tentative guideline to give those scores (categories) is ceiling round up average score of three parts (subjective and may be more parts later), and each part would be rated 1~3. First, "Word" which based on the words they use (proportion of colloquial words, and the lexical level of the sentence); second, "structure" which based on the punctuations and the complexity of the sentence ("!" more likely to be casual and the more complex the sentence is the higher score it would get); third is the "character" of one sentence (eg. "I" would be personal which is less formal than "the author"). 
 
-**Annotation Guideline**
+### **Annotation Guideline**
 
 we have uploaded our final annotation guideline to [GitHub](https://github.com/Thunderbeee/NLP-attitude-score)
 
-**Data**
+### **Data**
 
 we get data from Reddit and clean @ [GitHub](https://github.com/Thunderbeee/NLP-attitude-score)
 
-**Modeling**
+### **Modeling**
 
 we use BERT-classifier and Logistic Regression (LogReg) in classification tasks
 
-**Analysis**
+### **Analysis**
 
-##### Label Mistaken Identification 
+**Label Mistaken Identification** 
 
 We plotted the confusion matrix comparing each class of actual and predicted test results, and accordingly calculated the Precision, Recall, and F-1 score for each of the four classes.
 
@@ -93,7 +93,7 @@ At this point, one way to deal with this problem is randomly oversampling Class 
     ---
 
 
-##### Features Learned to most define the Class (logistic regression)
+**Features Learned to most define the Class (logistic regression)**
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
