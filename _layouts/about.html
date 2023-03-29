@@ -40,17 +40,27 @@ layout: default
             {{ content }}
           </div>
 
+          <br>
+          <br>
+          
           <!-- News -->
           {% if page.news -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
             {%- include news.html %}
           {%- endif %}
 
+          <br>
+          <br>
+
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
+
+
+          <br>
+          <br>
 
           <!-- Social -->
           {%- if page.social %}
@@ -66,5 +76,6 @@ layout: default
             </div>
           {%- endif %}
         </article>
+        
 
 </div>

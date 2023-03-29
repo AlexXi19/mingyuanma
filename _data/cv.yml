@@ -2,11 +2,11 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Mingyuan MA
     - name: Date of Birth
-      value: 14th March 1879
+      value: 30th April 2001
     - name: Languages
-      value: English, German
+      value: Chinese, English
 
 - title: Education
   type: time_table
