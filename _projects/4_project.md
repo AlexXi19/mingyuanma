@@ -7,7 +7,7 @@ importance: 3
 category: fun
 ---
 
-More infomration can be found @ [COMPSCI 61C](https://cs61c.org/sp23/projects/proj3/part-a/)
+More infomration can be found @ [COMPSCI 61C](https://cs61c.org/sp23/projects/proj3/part-a/). Thanks my partner Yuanrui Zhu!
 
 ### **Arithmetic Logic Unit (ALU)**
 

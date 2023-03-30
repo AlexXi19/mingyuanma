@@ -9,7 +9,7 @@ category: fun
 
 ### **Overview**
 
- A 2D tile-based world exploration engine. By “tile-based”, we mean the worlds you generate will consist of a 2D grid of tiles. By “world exploration engine” we mean that your software will build a world, which the user will be able to explore by walking around and interacting with objects in that world. Your world will have an overhead perspective. As an example of a much more sophisticated system than you will build, the NES game “Zelda II” is (sometimes) a tile based world exploration engine that happens to be a video game. More information can be found @ [COMPSCI 61B](http://fa20.datastructur.es/materials/proj/proj3/proj3)
+ A 2D tile-based world exploration engine. By “tile-based”, we mean the worlds you generate will consist of a 2D grid of tiles. By “world exploration engine” we mean that your software will build a world, which the user will be able to explore by walking around and interacting with objects in that world. Your world will have an overhead perspective. As an example of a much more sophisticated system than you will build, the NES game “Zelda II” is (sometimes) a tile based world exploration engine that happens to be a video game. More information can be found @ [COMPSCI 61B](http://fa20.datastructur.es/materials/proj/proj3/proj3). Also, thanks my partner [Han (Paris) Zhang](https://pariszhang11.github.io)!
 
 <br>
 
