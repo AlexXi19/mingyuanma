@@ -1,6 +1,6 @@
 ---
 layout: page
-title: image-image translation
+title: Image-Image Translation
 description: Unpaired Image-to-Image Translation using Cycle-GAN with JAX framework.<br> <br> 
 img: assets/img/cyclegan/cyclegan.gif
 importance: 1
@@ -20,6 +20,8 @@ In this project, we replicate the experiments in [Unpaired Image-to-Image Transl
     </div>
 </div>
 
+<br>
+
 ### **Details**
 
 If we were to simply train a GAN to learn a mapping G that translates from domain X to Y with an unpaired dataset, we cannot ensure that a generated “fake” Y image preserves any characteristics of the original X image, because there is nothing enforcing a one-to-one structure between the input and output. CycleGAN resolves this with the addition of the cycle consistency property; if we learn two mappings G: X → Y and F: Y → X which are inverses of each other, we can impose additional bijective structure on our model. In practice, this means CycleGAN trains two generators, one taking input in domain X then outputting in domain Y, and the other in the opposite direction. When the two generators are chained, we expect to get back the original image, i.e. F(G(X)) ≈ X and G(F(Y)) ≈ Y. This allows the model to translate images between the two domains while ensuring that not only are the resulting images realistic, but also some features of the original images are preserved. Therefore, two classes of objectives are used to train CycleGAN: [adversarial losses](https://arxiv.org/abs/1406.2661) make the images generated from the original domain resemble the data distribution of the target domain as in traditional GANs, and cycle consistency losses ensure that the learned maps G and F are mutual inverses so we no longer need paired datasets. To train the CycleGAN model, two GANs are trained simultaneously, alternating between updating the generators and updating the discriminators. In particular, generators are optimized using the two aforementioned objectives, while discriminators are trained using a combination of random real images from each domain and generated images from the other domain.
@@ -29,6 +31,8 @@ If we were to simply train a GAN to learn a mapping G that translates from domai
         {% include figure.html path="assets/img/cyclegan/algorithm.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
+<br>
 
 ### **Epilogue**
 

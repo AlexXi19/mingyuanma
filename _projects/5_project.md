@@ -1,80 +1,51 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
+title: BYoW
+description: A randomly generated labyrinth with an interactable avatar 
+img: assets/img/byow/byow.gif 
 importance: 3
 category: fun
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+### **Overview**
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+ A 2D tile-based world exploration engine. By “tile-based”, we mean the worlds you generate will consist of a 2D grid of tiles. By “world exploration engine” we mean that your software will build a world, which the user will be able to explore by walking around and interacting with objects in that world. Your world will have an overhead perspective. As an example of a much more sophisticated system than you will build, the NES game “Zelda II” is (sometimes) a tile based world exploration engine that happens to be a video game. More information can be found @ [COMPSCI 61B](http://fa20.datastructur.es/materials/proj/proj3/proj3)
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<br>
 
-<div class="row">
+### **World Generation**
+
+As mentioned above, the first goal of the project will be to write a world generator. The requirements for your world are listed below:
+
+* The world must be a 2D grid, drawn using our tile engine. The tile engine is described in lab12.
+* The world must be pseudorandomly generated. Pseudorandomness is discussed in lab 12.
+* The generated world must include distinct rooms and hallways, though it may also include outdoor spaces.
+* At least some rooms should be rectangular, though you may support other shapes as well.
+Your world generator must be capable of generating hallways that include turns (or equivalently, straight hallways that intersect).
+* The world should contain a random number of rooms and hallways.
+* The locations of the rooms and hallways should be random.
+* The width and height of rooms should be random.
+* The length of hallways should be random.
+* Rooms and hallways must have walls that are visually distinct from floors. Walls and floors should be visually distinct from unused spaces.
+* Rooms and hallways should be connected, i.e. there should not be gaps in the floor between adjacent rooms or hallways.
+* The world should be substantially different each time, i.e. you should not have the same basic layout with easily predictable features
+
+<br>
+
+### **Interactivity**
+
+In the second phase of the project, you’ll add the ability for the user to actually interact with the world, and will also add user interface (UI) elements to your world to make it feel more immersive and informative.
+
+The requirements for interactivity are as follows:
+
+* The user must be able to control some sort of “avatar” that can moved around using the W, A, S, and D keys. Lab 13 covers how to include interactivity. By “avatar”, we just mean some sort of on screen representation controlled by the user. For example, in my project, I used an “@” that could be moved around.
+* The avatar must be able to interact with the world in some way.
+* Your system must be deterministic in that the same sequence of keypresses from the same seed must result in exactly the same behavior every time. Note that a Random object is guaranteed to output the same random numbers every time.
+* In order to support saving and loading, your program will need to create some files in your proj3 directory (more details later in the spec and in the skeleton code). The only files you may create must have the suffix “.txt” (for example “savefile.txt”). You will get autograder issues if you do not do this.
+* Optionally, you may also include game mechanics that allow the user to win or lose (see gold points below). Aside from these feature requirements, there will be a few technical requirements for your system, described in more detail below.
+
+ <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/byow/games.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}

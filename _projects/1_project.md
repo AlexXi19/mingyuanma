@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pac-Man
-description: A semester-long course project to implemet algorithm for Pac-Man <br> <br> <br> 
+description: A semester-long course project of Pac-Man, involving A* search algorithm, MDP, RL, etc. <br> <br> 
 img: assets/img/pacman/pacman_game.gif
 importance: 3
 category: work
