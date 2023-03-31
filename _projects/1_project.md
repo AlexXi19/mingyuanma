@@ -4,7 +4,7 @@ title: Pac-Man
 description: A semester-long course project of Pac-Man, involving A* search algorithm, MDP, RL, etc. <br> <br> 
 img: assets/img/pacman/pacman_game.gif
 importance: 3
-category: work
+category: project
 ---
 
 ### **Overview**

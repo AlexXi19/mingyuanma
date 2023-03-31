@@ -1,10 +1,10 @@
 ---
 layout: page
-title: BYoW
+title: Labyrinth
 description: A randomly generated labyrinth with an interactable avatar 
 img: assets/img/byow/byow.gif 
 importance: 3
-category: fun
+category: project
 ---
 
 ### **Overview**

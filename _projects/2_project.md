@@ -4,7 +4,7 @@ title: Image-Image Translation
 description: Unpaired Image-to-Image Translation using Cycle-GAN with JAX framework.<br> <br> 
 img: assets/img/cyclegan/cyclegan.gif
 importance: 1
-category: work
+category: project
 ---
 This is a team work! Thanks [Daniel Zou](https://dlzou.github.io), [Alex Xi](https://www.alexhxi.com), and [Runzhe Mo](https://github.com/hairlessdevil)! Check it out @ [cyclegan-jax](https://github.com/dlzou/cyclegan-jax)
 
