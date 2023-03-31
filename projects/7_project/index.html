@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>project 6 | Mingyuan  Ma</title>
+    <title>Zero-Shot Learner | Mingyuan  Ma</title>
     <meta name="author" content="Mingyuan  Ma">
-    <meta name="description" content="a project with no image">
+    <meta name="description" content="Preventing Zero-Shot Transfer Degradation in Continual Learning of Vision-Language Models">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -128,24 +128,15 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">project 6</h1>
-            <p class="post-description">a project with no image</p>
+            <h1 class="post-title">Zero-Shot Learner</h1>
+            <p class="post-description">Preventing Zero-Shot Transfer Degradation in Continual Learning of Vision-Language Models</p>
           </header>
 
           <article>
-            <p>Every project has a beautiful feature showcase page.
-It’s easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.</p>
+            <p>More details can be found @ <a href="https://github.com/Thunderbeee/ZSCL" rel="external nofollow noopener" target="_blank">GitHub</a></p>
+<h3 id="introduction"><strong>Introduction</strong></h3>
 
-<p>To give your project a background in the portfolio page, just add the img tag to the front matter like so:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: page
-title: project
-description: a project with a background image
-img: /assets/img/12.jpg
----
-</code></pre></div></div>
+<p>Continual learning (CL) can help pre-trained vision-language models efficiently adapt to new or under-trained data distributions without re-training. Nevertheless, during the continual training of the Contrastive Language-Image Pre-training (CLIP) model, we observe that the model’s zero-shot transfer ability significantly degrades due to catastrophic forgetting. Existing CL methods can mitigate forgetting by replaying previous data. However, since the CLIP dataset is private, replay methods cannot access the pre-training dataset. In addition, replaying data of previously learned downstream tasks can enhance their performance but comes at the cost of sacrificing zero-shot performance. To address this challenge, we propose a novel method ZSCL to prevent zero-shot transfer degradation in the continual learning of vision-language models in both feature and parameter space. In the feature space, a reference dataset is introduced for distillation between the current and initial models. The reference dataset should have semantic diversity but no need to be labeled, seen in pre-training, or matched image-text pairs. In parameter space, we prevent a large parameter shift by averaging weights during the training. We propose a more challenging Multi-domain Task Incremental Learning (MTIL) benchmark to evaluate different methods, where tasks are from various domains instead of class-separated in a single dataset. Our method outperforms other methods in the traditional class-incremental learning setting and the MTIL by 9.7% average score. Our code locates at this https URL.</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -153,49 +144,13 @@ img: /assets/img/12.jpg
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/1-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/1-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/1-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/zscl/first-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/zscl/first-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/zscl/first-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/1.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/3-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/3-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/3-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/3.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/5-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/5-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/5-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/zscl/first.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -203,22 +158,26 @@ img: /assets/img/12.jpg
 
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
+
+<p><br></p>
+
+<h3 id="multi-domain-task-incremental"><strong>Multi-domain Task Incremental</strong></h3>
+
+<p>Our method ZSCL outperforms state-of-the-art methods in Multi-domain Task Incremental setting:</p>
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <figure>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/5-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/5-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/5-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/zscl/second-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/zscl/second-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/zscl/second-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/zscl/second.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -226,70 +185,62 @@ img: /assets/img/12.jpg
 
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-<p>You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, <em>bled</em> for your project, and then… you reveal its glory in the next row of images.</p>
+<p><br></p>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
+<h3 id="class-incremental"><strong>Class Incremental</strong></h3>
+
+<p>Our method ZSCL outperforms state-of-the-art methods in Class Incremental setting:</p>
+
+<p><strong>CIFAR10</strong></p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
         <figure>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/6-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/6-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/6-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/zscl/cifar-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/zscl/cifar-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/zscl/cifar-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/6.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/zscl/cifar.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 
+
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <figure>
+</div>
+
+<p><br></p>
+
+<p><strong>TinyImageNet</strong></p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+         <figure>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/11-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/11-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/11-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/zscl/in-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/zscl/in-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/zscl/in-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/11.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/zscl/in.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 
+
     </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
 
-<p>The code is simple.
-Just wrap your images with <code class="language-plaintext highlighter-rouge">&lt;div class="col-sm"&gt;</code> and place them inside <code class="language-plaintext highlighter-rouge">&lt;div class="row"&gt;</code> (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" rel="external nofollow noopener" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add <code class="language-plaintext highlighter-rouge">img-fluid</code> class to each; for rounded corners and shadows use <code class="language-plaintext highlighter-rouge">rounded</code> and <code class="language-plaintext highlighter-rouge">z-depth-1</code> classes.
-Here’s the code for the last row of images above:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-content-sm-center"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-8 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
+<p><br></p>
 
 
           </article>
