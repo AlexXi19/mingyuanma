@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Zero-Shot Learner
-description: Preventing Zero-Shot Transfer Degradation in Continual Learning of Vision-Language Models
+description: Preventing Zero-Shot Transfer Degradation in Continual Learning of Vision-Language Models. <br>
+# <br>
+# <br>
 img: assets/img/zscl/zscl.jpeg
 importance: 4
-category: fun
+category: Research
 ---
 
 More details can be found @ [GitHub](https://github.com/Thunderbeee/ZSCL)

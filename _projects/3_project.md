@@ -4,7 +4,7 @@ title: Formalness
 description:  Evaluate formal expression from 1000+ texts from Reddit using BERT-classifier and LogReg
 img: assets/img/nlp/nlp.gif
 importance: 2
-category: project
+category: Project
 ---
 
 ### **Introduction**
