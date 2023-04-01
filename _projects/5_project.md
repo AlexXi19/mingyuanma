@@ -4,7 +4,7 @@ title: Labyrinth
 description: A randomly generated labyrinth with an interactable avatar 
 img: assets/img/byow/byow.gif 
 importance: 3
-category: Project
+category: Others
 ---
 
 ### **Overview**

@@ -4,7 +4,7 @@ title: Stock Price
 description: Time series analysis and forecast for Airbnb stock opening price
 img: assets/img/ts/ts.gif
 importance: 4
-category: Project
+category: Others
 ---
 
 Thanks my teammates: XIAOLEI (JADEN) CHENG, YANAN (LANCE) LU, YUQI (MARTIN) ZHAI, AND ZEQI (GEORGE) WANG

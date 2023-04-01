@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Gallery
+title: Projects Gallery
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: true
+description: It is a collection of my projects 
+nav: True
 nav_order: 2
-display_categories: [Research, Project]
+display_categories: [Research, Artifical Intelligence, Others]
 horizontal: false
 ---
 
