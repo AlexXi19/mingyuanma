@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Human-AI Collaboration
-description: Learning Human Advice Giving to Improve Machine-Generated Advice Taking
+description: Learning Human Advice Giving to Improve Machine-Generated Advice Taking <br>
 img: assets/img/hai/hai.gif
 importance: 4
 category: Research
