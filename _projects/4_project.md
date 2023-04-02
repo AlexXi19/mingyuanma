@@ -1,7 +1,8 @@
 ---
 layout: page
 title: CPU
-description: A CPU that runs actual RISC-V instructions, implemented in Logisim
+description: A CPU that runs actual RISC-V instructions, implemented in Logisim <br> <br>
+# <br>
 img: assets/img/cpu/cpu.gif
 importance: 3
 category: Others

@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Labyrinth
-description: A randomly generated labyrinth with an interactable avatar 
+description: A randomly generated labyrinth with an interactable avatar <br> <br>
+# <br>
 img: assets/img/byow/byow.gif 
 importance: 3
 category: Others
