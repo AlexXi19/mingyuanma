@@ -15,8 +15,6 @@ We designed these projects with three goals in mind. The projects allow you to v
 
 Note: this project is not written by me from scratch, skeleton code is provided by course staff. The project is composed by three parts: Search, Multiagent, and RL. 
 
-
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/pacman/maze.png" title="example image" class="img-fluid rounded z-depth-1" %}
