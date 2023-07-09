@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mingyuan.ma.com/sitemap.xml
+Sitemap: https://mingyuan_ma.com/sitemap.xml
