@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Thunderbeee.github.io/sitemap.xml
+Sitemap: https://mingyuan.ma.com/sitemap.xml
