@@ -5,7 +5,7 @@ permalink: /projects/
 description: It is a collection of my projects 
 nav: True
 nav_order: 2
-display_categories: [Research, Artifical Intelligence, Others]
+display_categories: [Research, Artifical Intelligence, Misc.]
 horizontal: false
 ---
 

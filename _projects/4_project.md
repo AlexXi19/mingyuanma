@@ -6,7 +6,7 @@ description: A CPU that runs actual RISC-V instructions, implemented in Logisim 
 # <br>
 img: assets/img/cpu/cpu.gif
 importance: 3
-category: Others
+category: Misc.
 ---
 
 More infomration can be found @ [COMPSCI 61C](https://cs61c.org/sp23/projects/proj3/part-a/). Thanks my partner Yuanrui Zhu!

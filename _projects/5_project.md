@@ -6,7 +6,7 @@ description: A randomly generated labyrinth with an interactable avatar <br>
 # <br>
 img: assets/img/byow/byow.gif 
 importance: 3
-category: Others
+category: Misc.
 ---
 
 ### **Overview**
